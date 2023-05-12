@@ -1,6 +1,10 @@
 # Qualitest - Codility Test
 
-Hi! This is my submission for the **Qualitest** test as part of interview process
+Hi! This is my submission for the **Qualitest** test as part of interview process.
+
+## Results
+* [ExecutionResultStatus](https://github.com/poojayedale744/Katalon/blob/master/ExecutionResultStatus.png)
+* [ExecutionScenarioDetails](https://github.com/poojayedale744/Katalon/blob/master/ExecutionScenarioDetails.png)
 
 
 # Setup
