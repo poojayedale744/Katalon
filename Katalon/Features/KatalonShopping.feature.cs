@@ -19,8 +19,8 @@ namespace Katalon.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("KatalonShopping")]
+    [TechTalk.SpecRun.FeatureAttribute("KatalonShopping", Description="\tAs a user of Katalon shopping website\r\n\tI would like to add and remove items to " +
+        "the cart\r\n\tSo that I can verify my shopping list", SourceFile="Features\\KatalonShopping.feature", SourceLine=0)]
     public partial class KatalonShoppingFeature
     {
         
@@ -31,7 +31,7 @@ namespace Katalon.Features
 #line 1 "KatalonShopping.feature"
 #line hidden
         
-        [NUnit.Framework.OneTimeSetUpAttribute()]
+        [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -40,19 +40,18 @@ namespace Katalon.Features
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.OneTimeTearDownAttribute()]
+        [TechTalk.SpecRun.FeatureCleanup()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void TestTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -61,7 +60,6 @@ namespace Katalon.Features
         public virtual void ScenarioInitialize(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioInitialize(scenarioInfo);
-            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<NUnit.Framework.TestContext>(NUnit.Framework.TestContext.CurrentContext);
         }
         
         public virtual void ScenarioStart()
@@ -74,9 +72,8 @@ namespace Katalon.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("To verify if users can add or remove items from the cart")]
-        [NUnit.Framework.CategoryAttribute("ShoppingCartTest")]
+        [TechTalk.SpecRun.ScenarioAttribute("To verify if users can add or remove items from the cart", new string[] {
+                "ShoppingCartTest"}, SourceLine=6)]
         public virtual void ToVerifyIfUsersCanAddOrRemoveItemsFromTheCart()
         {
             string[] tagsOfScenario = new string[] {

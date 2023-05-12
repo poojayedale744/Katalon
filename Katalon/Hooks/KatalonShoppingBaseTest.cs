@@ -5,7 +5,7 @@ using System.IO;
 using System.Reflection;
 using TechTalk.SpecFlow;
 
-namespace ProjectTask.Hooks
+namespace Katalon.Hooks
 {
     [Binding]
     public class KatalonShoppingBaseTest
